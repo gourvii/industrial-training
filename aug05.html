@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body {
+                background-color: beige;
+            }
+            fieldset {
+                margin: 10% 10%;
+                padding: 5% 5%;
+                border-color: brown;
+                border-radius: 10%;
+                min-width: 200px;
+            }
+            legend {
+                font-size: 180%;
+                color: chocolate;
+                font-family: fantasy;
+            }
+            label {
+                font-size: 130%;
+                font-family: fantasy;
+                color: maroon;
+            }
+            button {
+                border-radius: 10%;
+                color: chocolate;
+                font-family: fantasy;
+                font-size: 125%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1></h1>
+        <form action="action_page.php" >
+            <fieldset>
+                <legend>Kindly Fill the form</legend>
+                <div>
+                    <label for="name">Username</label><br>
+                    <input type="text" name="name" id="name" placeholder="your name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tell" name="phone" id="phone" required>
+                </div>
+                <br>
+                <div>
+                    <label for="age">Age</label><br>
+                    <input type="number" name="age" id="age" min="1" max="150">
+                </div>
+                <br>
+                <div>
+                    <label for="dob">Birthdate</label><br>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <br>
+                <div>
+                    Languages learned
+                    <br><input type="checkbox" name="c" id="c">
+                    <label for="c">C</label>
+                    <br><input type="checkbox" name="c++" id="c++">
+                    <label for="c++">C++</label>
+                    <br><input type="checkbox" name="py" id="py">
+                    <label for="py">Python</label>
+                    <br><input type="checkbox" name="java" id="java">
+                    <label for="java">Java</label>
+                    <br><input type="checkbox" name="html" id="html">
+                    <label for="html">HTML</label>
+                    <br><input type="checkbox" name="javas" id="javas">
+                    <label for="javas">JavaScript</label>
+                </div>
+                <br>
+                <div>
+                   Training taken
+                   <br><input type="radio" name="training" id="HTML">
+                   <label for="HTML">HTML</label>
+                   <br><input type="radio" name="training" id="digi">
+                   <label for="digi">Digital Marketting</label>
+                   <br><input type="radio" name="training" id="data">
+                   <label for="data">Data Analytics</label>
+                   <br><input type="radio" name="training" id="app">
+                   <label for="app">App Development</label> 
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Gender</label><br>
+                    <select name="gender" id="gender"> 
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="file">Submit file</label> <br>
+                    <input id="file" type="file" name="file">
+                </div>
+                <br>
+                <div>
+                    <label>Password <br>
+                        <input type="password" name="password" required> 
+                    </label>
+                </div>
+                <br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
